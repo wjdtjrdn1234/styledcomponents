@@ -1,6 +1,7 @@
 import styled,{createGlobalStyle,keyframes,css ,ThemeProvider} from "styled-components";
 import theme from './theme';
 
+//createGlobalstyle
 const GlobalStyles = createGlobalStyle`
 body{
   padding:0;
@@ -21,6 +22,8 @@ width: 100%;
 background-color: gray;
 `;
 
+
+//Animations
 const Button = styled.button`
   background-color: ${(props) => (props.danger ? "red" : "black")};
   border-radius: 50px;
@@ -65,9 +68,7 @@ border-radius: 5px;
 ${awesomeCard} //awesomeCard 적용
 `;
 
-const Card = styled.div`
-    background-color: white;
-`;
+
 //Theming
 const Button2 = styled.button`
     border-radius: 30px;
@@ -79,6 +80,10 @@ const Button2 = styled.button`
 
 // 말 그대로 그물(Nest)을 치는 형태의 기술이며 Nesting이라고 합니다. Container 안의 Card를 참조하고 싶다면 아래와 같이 적용합니다.
 //  이는 SASS와 같은 형태로 작성하며 비슷하게 동작합니다.
+const Card = styled.div`
+    background-color: white;
+`;
+
 const Container2 = styled.div`
     width: 100%;
     height: 100vh;
